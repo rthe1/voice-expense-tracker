@@ -1,6 +1,9 @@
 import React from 'react';
 import { Card, CardHeader, CardContent, Typography, Grid, Divider } from '@material-ui/core';
-import useStyles from './styles'
+import useStyles from './styles';
+import Form from './Form/Form';
+import List from './List/List';
+
 
 const Main = () => {
   const classes = useStyles();
@@ -16,11 +19,13 @@ const Main = () => {
         <Typography>
           {/* info card */}
         </Typography>
+        <Divider />
+        <Form/>
       </CardContent>
       <CardContent>
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            {/* List */}
+            <List />
           </Grid>
         </Grid>
       </CardContent>
