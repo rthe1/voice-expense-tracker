@@ -55,9 +55,9 @@ useEffect(() => {
           break;
         case 'category':
           if (incomeCategories.map((iC) => iC.type).includes(category)) {
-            setFormData({ ...formData, type: 'Income', category });
+            setFormData({ ...formData, type: 'Income', category: category });
           } else if (expenseCategories.map((iC) => iC.type).includes(category)) {
-            setFormData({ ...formData, type: 'Expense', category });
+            setFormData({ ...formData, type: 'Expense', category: category });
           }
           break;
         case 'date':
